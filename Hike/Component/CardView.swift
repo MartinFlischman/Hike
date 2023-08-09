@@ -34,15 +34,17 @@ struct CardView: View {
                             )
                         )
                         
+                        Spacer()
+                        
                         Button {
                            // Action: Show a sheet
                             print("The button was pressed.")
                         }   label: {
-                            Text("Button")
+                            CustomButtonView()
                         }
                     }
                     
-                    Text("Fun and enjoyable outdoor activity for friends and family.")
+                    Text("Fun and enjoyable outdoor activity with friends and family.")
                         .multilineTextAlignment(.leading)
                         .italic()
                         .foregroundColor(.customGrayMedium)
