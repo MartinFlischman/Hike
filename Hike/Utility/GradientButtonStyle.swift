@@ -15,6 +15,21 @@ struct GradientButton: ButtonStyle {
             .padding(.vertical)
             .padding(.horizontal, 30)
             .background(
+                // Conditional Statement with Nil Coalescing
+                // Condition ? A : B
+                configuration.isPressed ?
+                // A: When the user pressed the Button
+                LinearGradient(
+                    colors: [
+                        .customGrayMedium,
+                        .customGrayLight
+                    ],
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+                :
+                // B: When the Button in not pressed
+                
                 LinearGradient(
                     colors: [
                         .customGrayLight,
