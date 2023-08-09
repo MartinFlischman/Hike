@@ -12,12 +12,12 @@ struct CustomBackgroundView: View {
         ZStack {
             
             // Mark: - 3. Depth
-            Color("ColorGreenDark")
+            Color.customGreenDark
                 .cornerRadius(40)
                 .offset(y: 12)
             
             // Mark: - 2. Light
-            Color("ColorGreenLight")
+            Color.customGreenLight
                 .cornerRadius(40)
                 .offset(y: 3)
                 .opacity(0.85)
@@ -26,8 +26,8 @@ struct CustomBackgroundView: View {
             
             LinearGradient(
                 colors: [
-                    Color("ColorGreenLight"),
-                    Color("ColorGreenMedium")
+                    Color.customGreenLight,
+                    Color.customGreenMedium
                 ],
                 startPoint: .top,
                 endPoint: .bottom
