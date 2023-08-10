@@ -65,15 +65,19 @@ struct MotionAnimationView: View {
             }
         } // ZStack - End
         .frame(width: 256, height: 256)
+        .mask(Circle())
+        .drawingGroup()
     }
 }
 
 struct MotionAnimationView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
-            Color.teal.ignoresSafeArea()
-            
             MotionAnimationView()
+                .background(
+                    Circle()
+                        .fill(.teal)
+                )
         }
     }
 }
