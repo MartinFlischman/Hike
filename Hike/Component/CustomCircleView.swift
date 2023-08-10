@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CustomCircleView: View {
+    @State private var isAnimateGradient: Bool = false
+    
     var body: some View {
         Circle()
             .fill(
@@ -16,10 +18,15 @@ struct CustomCircleView: View {
                         .customIndigoMedium,
                         .customSalmonLight
                     ],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
+                    startPoint: isAnimateGradient ? .topLeading : .bottomLeading,
+                    endPoint: isAnimateGradient ? .bottomTrailing : .topTrailing
                 )
             )
+            .onAppear {
+                withAnimation(.linear(duration: 3.0).repeatForever(autoreverses: true)) {
+                    isAnimateGradient.toggle()
+                }
+            }
             .frame(width: 256, height: 256)
     }
 }

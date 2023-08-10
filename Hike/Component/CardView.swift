@@ -78,7 +78,7 @@ struct CardView: View {
             // Mark: - Main Content
                 
                 ZStack {
-                    
+                    CustomCircleView()
                     
                     Image("image-\(imageNumber)")
                         .resizable()
