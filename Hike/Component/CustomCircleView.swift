@@ -13,8 +13,8 @@ struct CustomCircleView: View {
             .fill(
                 LinearGradient(
                     colors: [
-                        Color("ColorIndigoMedium"),
-                        Color("ColorSalmonLight")
+                        .customIndigoMedium,
+                        .customSalmonLight
                     ],
                     startPoint: .topLeading,
                     endPoint: .bottomTrailing
