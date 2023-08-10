@@ -15,16 +15,33 @@ struct MotionAnimationView: View {
     // Mark: - Functions
     
     // 1. Random Coordinate
+    func randomCoordinate() -> CGFloat {
+        return CGFloat.random(in: 0...256)
+    }
+    
     // 2. Random Size
+    
+    
     // 3. Random Scale
+    
+    
     // 4. Random Speed
+    
+    
     // 5. Random Delay
+    
+    
     
     var body: some View {
         ZStack {
             ForEach(0...randomCircle, id: \.self) { item in
                 Circle()
                     .foregroundColor(.white)
+                    .opacity(0.25)
+                    .position(
+                        x: randomCoordinate(),
+                        y: randomCoordinate()
+                    )
             }
         } // ZStack - End
         .frame(width: 256, height: 256)
