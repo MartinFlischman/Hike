@@ -20,7 +20,9 @@ struct MotionAnimationView: View {
     }
     
     // 2. Random Size
-    
+    func randomSize() -> CGFloat {
+        return CGFloat(Int.random(in: 4...80))
+    }
     
     // 3. Random Scale
     
@@ -38,6 +40,7 @@ struct MotionAnimationView: View {
                 Circle()
                     .foregroundColor(.white)
                     .opacity(0.25)
+                    .frame(width: randomSize())
                     .position(
                         x: randomCoordinate(),
                         y: randomCoordinate()
