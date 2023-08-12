@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SettingsView: View {
     var body: some View {
-        
+        List {
+            // Section: Header
+            
+            Text("Settings View")
+            
+            // Section: Icons
+            
+            // Section: About
+        } // List - End
     }
 }
 
