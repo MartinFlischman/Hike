@@ -70,6 +70,7 @@ struct CardView: View {
                         }
                         .sheet(isPresented: $isShowingSheet) {
                             SettingsView()
+                                .presentationDragIndicator(.visible)
                         }
                     }
                     
