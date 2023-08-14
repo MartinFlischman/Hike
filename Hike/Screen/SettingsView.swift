@@ -84,7 +84,7 @@ struct SettingsView: View {
                 
                 CustomListRowView(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS &  iPadOS 16.0+", rowTintColor: .red)
                 
-                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "SwiftUI", rowTintColor: .orange)
+                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
                 
                 CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
                 
@@ -92,7 +92,7 @@ struct SettingsView: View {
                 
                 CustomListRowView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Robert Petras", rowTintColor: .pink)
                 
-                CustomListRowView(rowLabel: "Website", rowIcon: "globe", rowContent: "https://github.com/MartinFlischman/Hike", rowTintColor: .indigo)
+                CustomListRowView(rowLabel: "Website", rowIcon: "globe", rowTintColor: .indigo, rowLinkLabel: "GitHub", rowLinkDestination: "https://github.com/MartinFlischman/Hike")
                 
             } // Section - End
             
