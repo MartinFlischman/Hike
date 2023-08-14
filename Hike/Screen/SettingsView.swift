@@ -80,7 +80,7 @@ struct SettingsView: View {
                     .padding(.vertical, 8)
             ) {
                 // 1. Advance Labeled Content
-                
+                CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "Hike", rowTintColor: .blue)
                 
             } // Section - End
             
