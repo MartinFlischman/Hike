@@ -80,10 +80,10 @@
 			children = (
 				5B3206F32A82CF3C00293CE1 /* Component */,
 				5B04ADA62A83A5B400AA7F90 /* Utility */,
+				5B3206E92A82C9A500293CE1 /* Preview Content */,
 				5B3206E32A82C9A500293CE1 /* HikeApp.swift */,
 				5B3AD5EB2A866EFB0086B9FD /* Screen */,
 				5B3206E72A82C9A500293CE1 /* Assets.xcassets */,
-				5B3206E92A82C9A500293CE1 /* Preview Content */,
 			);
 			path = Hike;
 			sourceTree = "<group>";
