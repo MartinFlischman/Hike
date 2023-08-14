@@ -70,7 +70,42 @@ struct SettingsView: View {
             
             
             // Section: About
-            
+            Section(
+                header: Text("About the App"),
+                footer: HStack {
+                    Spacer()
+                    Text("Copyright © All rights reserved.")
+                    Spacer()
+                }
+                    .padding(.vertical, 8)
+            ) {
+                // 1. Basic Labled Content
+                LabeledContent("Application", value: "Hike")
+                
+                // 2. Advance Labeled Content
+                LabeledContent {
+                    // Content
+                    Text("Hike")
+                        .foregroundColor(.primary)
+                        .fontWeight(.heavy)
+                } label: {
+                    // Label
+                    HStack {
+                        ZStack {
+                         RoundedRectangle(cornerRadius: 8)
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(.blue)
+                         Image(systemName: "apps.iphone")
+                            .foregroundColor(.white)
+                            .fontWeight(.semibold)
+                        }
+                        
+                        Text("Application")
+                    }
+                }
+                
+                
+            } // Section - End
             
         } // List - End
     }
