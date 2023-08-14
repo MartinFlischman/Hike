@@ -71,7 +71,7 @@ struct SettingsView: View {
             
             // Section: About
             Section(
-                header: Text("About the App"),
+                header: Text("Information"),
                 footer: HStack {
                     Spacer()
                     Text("Copyright © All rights reserved.")
@@ -81,6 +81,18 @@ struct SettingsView: View {
             ) {
                 // 1. Advance Labeled Content
                 CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "Hike", rowTintColor: .blue)
+                
+                CustomListRowView(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS &  iPadOS 16.0+", rowTintColor: .red)
+                
+                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "SwiftUI", rowTintColor: .orange)
+                
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
+                
+                CustomListRowView(rowLabel: "Developer", rowIcon: "ellipsis.curlybraces", rowContent: "Martin Flischman", rowTintColor: .green)
+                
+                CustomListRowView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Robert Petras", rowTintColor: .pink)
+                
+                CustomListRowView(rowLabel: "Website", rowIcon: "globe", rowContent: "https://github.com/MartinFlischman/Hike", rowTintColor: .indigo)
                 
             } // Section - End
             
